@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+     <table class="table table-striped">
+        <tr> <th>Id</th><th>Nom</th> <th>Prenom</th> <th>CIN</th> <th>Société</th> <th>Type de stage</th> <th>Date de début</th> <th>Date fin</th><th></th><th></th></tr>
+        <tbody *ngFor="let stagiaire of stagiaires">
+        <tr >
+        <td>{{ stagiaire.idStagiaire }}</td>
+        <td>{{ stagiaire.nom }}</td>
+        <td>{{ stagiaire.prenom }}</td>
+        <td>{{ stagiaire.cin }}</td>
+        <td>{{ stagiaire.societe }}</td>
+        <td>{{ stagiaire.typeStage }}</td>
+        <td>{{ stagiaire.dateDeb | date:'dd/MM/yyyy' }}</td>
+        <td>{{ stagiaire.dateFin | date:'dd/MM/yyyy' }}</td>
+        <td><a class="btn btn-danger" (click)="supprimerStagiaire(stagiaire)">Supprimer</a></td>
+        <td><a class="btn btn-success" [routerLink]="['/updateStagiaire',stagiaire.idStagiaire]">Modifier</a></td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    
+   
+
+     

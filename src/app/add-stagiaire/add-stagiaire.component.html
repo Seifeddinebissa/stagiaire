@@ -1,0 +1,51 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un Stagiaire :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID Stagiaire</label>
+        <input type="text" [(ngModel)]="newStagiaire.idStagiaire" name="idStagiaire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom de stagiaire</label>
+        <input type="text" [(ngModel)]= "newStagiaire.nom" name="nom" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Prénom de stagiaire</label>
+        <input type="text" [(ngModel)]= "newStagiaire.prenom" name="prenom" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >CIN</label>
+        <input type="text" [(ngModel)]= "newStagiaire.cin" name="cin" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Société</label>
+        <input type="text" [(ngModel)]= "newStagiaire.societe" name="societe" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Type de stage</label>
+        <input type="text" [(ngModel)]= "newStagiaire.typeStage" name="typeStage" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date de début</label>
+        <input type="date" [(ngModel)]= "newStagiaire.dateDeb" name="dateDeb" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date de fin</label>
+        <input type="date" [(ngModel)]= "newStagiaire.dateFin" name="dateFin" class="form-control">
+        </div>
+
+        <div class="mt-2">
+        <button type="submit" (click)="addStagiaire()" class="btn btn-success">Ajouter</button>
+        </div>
+        </form>    
+        </div>
+    
